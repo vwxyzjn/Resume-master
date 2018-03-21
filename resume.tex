@@ -1,0 +1,152 @@
+% Chris Gibson's Resume
+% URL: 
+%
+% Based on resume tex file by Kamil Wojcicki
+% URL: http://linux.dsplabs.com.au/resume-writing-example-latex-template-linux-curriculum-vitae-professional-cv-layout-format-text-p54/
+
+\documentclass[margin,line]{resume}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\begin{document}
+
+\name{\huge Costa Huang}
+{
+	\sc
+    \hfill (864)501-6630                  \vspace{0mm}\\\vspace{0mm}%
+    \hfill \href{mailto:costa.huang@outlook.com}{costa.huang@outlook.com}           \vspace{0mm}\\\vspace{0mm}%
+    \hfill \href{https://github.com/vwxyzjn}{github.com/vwxyzjn}           \vspace{0mm}\\\vspace{0mm}%
+    \hfill \href{http://linkedin.com/in/costa-huang}{linkedin.com/in/costa-huang}           \vspace{0mm}\\\vspace{0mm}%
+    \hfill \href{https://costahuang.me/}{www.costahuang.me}               \vspace{0mm}\\\vspace{-10mm}%
+}
+
+\begin{resume}
+
+\vspace{1mm}
+
+    %__________________________________________________________________________________________________________________
+    % Interests
+    \section{\mysidestyle \textbf{\large{P}\small{ROJECT\\INTERESTS}}}
+
+    	Web programming, Artificial intelligence, Open-sourced Softwares, Data visualization, Concurrent programming, DevOps, Cloud computing, Highly scalable programs.
+
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle \textbf{\large{S}\small{KILLS}}}
+
+    Python,\hspace{2mm}JavaScript,\hspace{2mm}HTML,\hspace{2mm}CSS,\hspace{2mm}Git,\hspace{2mm}Docker,\hspace{2mm}Vue.js,\hspace{2mm}PostgreSQL,\hspace{2mm}Rust \textsl{\small(learning)},\hspace{2mm}\LaTeX.
+
+
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Professional Experience
+    \section{\mysidestyle \textbf{\large{E}\small{XPERIENCE}}}
+
+    % DreamWorks
+    \textbf{\listing Furman University}, Greenville, sc \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Software Developer} \hfill \textbf{Nov 2017 -- Feb 2018}\\
+    Developed an application for the commencement. Utilized Go to create highly concurrent server with REST API endpoints, and used Vue.js to build an interactive admin panel. \vspace{1mm}
+
+    \textsl{Teaching Assistant} \vspace{2mm}\hfill \textbf{Aug 2017 -- Dec 2017}\\
+    Tutored students on Web Programming topics such asJavaScript, VueJs, Webpack, Vuetify, Laravel, and
+    AWS. Helped the professor with preparing lab materials. \vspace{1mm}
+    
+    \textsl{Research Fellow} \vspace{2mm}\hfill \textbf{Jun 2017 -- Aug 2017}\\
+    Worked with Dr.~Chirs Healy to Conduct research on travel plan recommendation based on historical traffic flow data. Authored a Python server package, StreetTraffic, that crawls traffic flow data (See Demo). Created proper unit-tests and documentation by using Sphinx.
+
+
+
+    % Yahoo Inc.
+    \textbf{\listing VITA}, Greenville, SC \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Tax Volunteer} \hfill \textbf{Feb 2015 -- Apr 2015}
+
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle \textbf{\large{E}\small{DUCATION}}}
+
+    \textbf{\listing Furman University}, Greenville, SC \vspace{2mm}\\\vspace{1mm}%
+    \textsl{B.S of Computer Science} \hfill \textbf{ Aug 2013 -- May 2018}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Dean's list (2017 - 2018)
+        \item GPA: 3.38 / 4.00
+    \end{list2}\vspace{-1.5mm}
+
+
+
+
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle \textbf{\large{P}\small{ROJECTS}}}
+
+    
+    \bgroup
+    \def\arraystretch{1.2}%  
+	\begin{tabular}{@{}p{7cm}p{1.0cm}p{7cm}}
+	    % Jupyter Disqus
+    	\begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing Jupyter Disqus (Python)} \\ 
+    	    \textsl{Python Package That Adds Disqus to } \\
+    	    \textsl{Your Jupyter Notebook}\\
+    	    \href{https://github.com/vwxyzjn/jupyter_disqus}{github.com/vwxyzjn/jupyter\_disqus}\\
+    	    \tikz\draw[red,fill=red] (0,0) circle (.5ex);
+    	\end{tabular} &&
+    	% SC2AI
+        \begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing SC2AI (Python)} \\ 
+    	    \textsl{Use Tensorflow to Train StarCraft II AI} \\
+    	    \href{https://costahuang.me/SC2AI/}{costahuang.me/SC2AI}
+    	\end{tabular} \vspace{1cm} \\
+    	% LP Optimization Python
+    	\begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing LP Optimization (Python)} \\ 
+    	    \textsl{Linear programming for Finding the } \\
+    	    \textsl{Optimal Schedule} \\
+    	    \href{https://costahuang.me/LP_optimization_python/}{costahuang.me/LP\_optimization\_python}
+    	\end{tabular} &&
+    	% Parallax Template
+        \begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing Parallax Template (JavaScript)} \\ 
+    	    \textsl{Free Website Template for Beginners} \\
+    	    \href{https://vuetifyjs.com/themes/parallax-starter/}{vuetifyjs.com/themes/parallax-starter}
+    	\end{tabular} \vspace{1cm}  \\ 
+    	% StreetTraffic
+    	\begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing StreetTraffic (Python)} \\ 
+    	    \textsl{Library that crawls traffic data} \\
+    	    \href{https://streettraffic.org/}{streettraffic.org}
+    	\end{tabular} &&
+    	% Sentiment Analysis
+        \begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing Sentiment Analysis (Python)} \\ 
+    	    \textsl{Movie reviews classification} \\
+    	    \href{https://costahuang.me/Sentiment-Analysis-LSTM/}{costahuang.me/Sentiment-Analysis-LSTM}
+    	\end{tabular} \vspace{0.7cm}  \\ 
+    	% Penspider
+    	\begin{tabular}[t]{@{}l@{}}
+    	    \textbf{\listing Penspider (Python)} \\ 
+    	    \textsl{Crawl Items from a Pen Retailer} \\
+    	    \href{https://github.com/vwxyzjn/penspider}{github.com/vwxyzjn/penspider}
+    	\end{tabular} &&
+	\end{tabular}
+	\egroup
+	\vspace{0.2cm}
+	
+% 	\\&
+%     \textsl{Voxel Rendering/Lighting Library}&
+%     &
+%     \textsl{Massively Parallel CUDA Ray Tracer}\\&
+%     http://github.com/cgibson/Mr-Voxel&
+%     \hspace{1mm}&http://github.com/cphaste/haste\\
+
+
+\end{resume}
+\end{document}
