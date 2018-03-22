@@ -9,8 +9,11 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage{svg}
+\usepackage{fontawesome}
 \definecolor{PythonColor}{HTML}{3572A5}
 \definecolor{JavaScriptColor}{HTML}{f1e05a}
+\definecolor{JupyterColor}{HTML}{DA5B0B}
 
 \begin{document}
 
@@ -40,7 +43,9 @@
     % Computer Skills
     \section{\mysidestyle \textbf{\large{S}\small{KILLS}}}
 
-    Python,\hspace{2mm}JavaScript,\hspace{2mm}HTML,\hspace{2mm}CSS,\hspace{2mm}Git,\hspace{2mm}Docker,\hspace{2mm}Vue.js,\hspace{2mm}PostgreSQL,\hspace{2mm}Rust \textsl{\small(learning)},\hspace{2mm}\LaTeX.
+    Python,\hspace{2mm}JavaScript,\hspace{2mm}HTML,\hspace{2mm}CSS,\hspace{2mm}Git,\hspace{2mm}Linux,\hspace{2mm}Docker,\hspace{2mm}Vue.js,\hspace{2mm}PostgreSQL,\hspace{2mm}Statistics.
+    
+    %\hspace{2mm}Rust \textsl{\small(learning)}
 
 
 \sectionline
@@ -55,17 +60,14 @@
     Developed an application for the commencement. Utilized Go to create highly concurrent server with REST API endpoints, and used Vue.js to build an interactive admin panel. \vspace{1mm}
 
     \textsl{Teaching Assistant} \vspace{2mm}\hfill \textbf{Aug 2017 -- Dec 2017}\\
-    Tutored students on Web Programming topics such asJavaScript, VueJs, Webpack, Vuetify, Laravel, and
+    Tutored students on Web Programming topics such as JavaScript, VueJs, Webpack, Vuetify, Laravel, and
     AWS. Helped the professor with preparing lab materials. \vspace{1mm}
     
     \textsl{Research Fellow} \vspace{2mm}\hfill \textbf{Jun 2017 -- Aug 2017}\\
-    Worked with Dr.~Chirs Healy to Conduct research on travel plan recommendation based on historical traffic flow data. Authored a Python server package, StreetTraffic, that crawls traffic flow data (See Demo). Created proper unit-tests and documentation by using Sphinx.
+    Worked with Dr.~Chirs Healy to Conduct research on travel plan recommendation based on historical traffic flow data. Authored a Python server package, StreetTraffic, that crawls traffic flow data. Created proper unit-tests and documentation by using Sphinx.
 
 
 
-    % Yahoo Inc.
-    \textbf{\listing VITA}, Greenville, SC \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Tax Volunteer} \hfill \textbf{Feb 2015 -- Apr 2015}
 
 \sectionline
 
@@ -74,7 +76,7 @@
     \section{\mysidestyle \textbf{\large{E}\small{DUCATION}}}
 
     \textbf{\listing Furman University}, Greenville, SC \vspace{2mm}\\\vspace{1mm}%
-    \textsl{B.S of Computer Science} \hfill \textbf{ Aug 2013 -- May 2018}\vspace{-3mm}\\\vspace{-1mm}%
+    \textsl{B.S in Computer Science \\ B.S in Mathematics} \hfill \vspace{0.1cm} \textbf{ Aug 2013 -- May 2018}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Dean's list (2017 - 2018)
         \item GPA: 3.38 / 4.00
@@ -96,25 +98,23 @@
 	    % Jupyter Disqus
     	\begin{tabular}[t]{@{}l@{}}
     	    \textbf{\listing Jupyter Disqus} \\ 
-    	    \textsl{Python Package That Adds Disqus to } \\
-    	    \textsl{Your Jupyter Notebook}\\
+    	    \textsl{Adds Disqus to Your Jupyter Notebook} \\
     	    \href{https://github.com/vwxyzjn/jupyter_disqus}{github.com/vwxyzjn/jupyter\_disqus}\\
-    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python
+    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python \hspace{1cm} \raisebox{-0.05cm}{\includesvg{star.svg}} 9
     	\end{tabular} &&
     	% SC2AI
         \begin{tabular}[t]{@{}l@{}}
     	    \textbf{\listing SC2AI} \\ 
     	    \textsl{Use Tensorflow to Train StarCraft II AI} \\
     	    \href{https://costahuang.me/SC2AI/}{costahuang.me/SC2AI}\\
-    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python
+    	    \tikz\draw[JupyterColor,fill=JupyterColor] (0,0) circle (.5ex); Jupyter Notebook \hspace{1cm} \raisebox{-0.05cm}{\includesvg{star.svg}} 6
     	\end{tabular}  \\\\
-    	% LP Optimization Python
+    	% StreetTraffic
     	\begin{tabular}[t]{@{}l@{}}
-    	    \textbf{\listing LP Optimization} \\ 
-    	    \textsl{Linear programming for Finding the } \\
-    	    \textsl{Optimal Schedule} \\
-    	    \href{https://costahuang.me/LP_optimization_python/}{costahuang.me/LP\_optimization\_python}\\
-    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python
+    	    \textbf{\listing StreetTraffic} \\ 
+    	    \textsl{Library that crawls traffic data} \\
+    	    \href{https://streettraffic.org/}{streettraffic.org}\\
+    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python \hspace{1cm} \raisebox{-0.05cm}{\includesvg{star.svg}} 3
     	\end{tabular} &&
     	% Parallax Template
         \begin{tabular}[t]{@{}l@{}}
@@ -123,12 +123,13 @@
     	    \href{https://vuetifyjs.com/themes/parallax-starter/}{vuetifyjs.com/themes/parallax-starter}\\
     	    \tikz\draw[JavaScriptColor,fill=JavaScriptColor] (0,0) circle (.5ex); JavaScript
     	\end{tabular}  \\\\ 
-    	% StreetTraffic
+    	% LP Optimization Python
     	\begin{tabular}[t]{@{}l@{}}
-    	    \textbf{\listing StreetTraffic} \\ 
-    	    \textsl{Library that crawls traffic data} \\
-    	    \href{https://streettraffic.org/}{streettraffic.org}\\
-    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python
+    	    \textbf{\listing LP Optimization} \\ 
+    	    \textsl{Linear programming for Finding the } \\
+    	    \textsl{Optimal Schedule} \\
+    	    \href{https://costahuang.me/LP_optimization_python/}{costahuang.me/LP\_optimization\_python}\\
+    	    \tikz\draw[PythonColor,fill=PythonColor] (0,0) circle (.5ex); Python 
     	\end{tabular} &&
     	% Sentiment Analysis
         \begin{tabular}[t]{@{}l@{}}
